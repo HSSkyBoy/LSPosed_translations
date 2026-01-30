@@ -49,8 +49,11 @@
     <string name="system_prop_incorrect"><![CDATA[部分必須嘅系統屬性俾人刪除或修改咗，<br/>模組可能會隨機失效。]]></string>
     <string name="need_update">需要更新</string>
     <string name="please_update_summary">請安裝最新版本嘅 LSPosed</string>
+    <string name="developer_warning_title">畀模組開發者嘅提示</string>
+    <string name="developer_warning_summary">請喺 Android Studio 停用部署優化，或者用 `gradlew installDebug` 指令嚟安裝，否則會更新唔到模組。</string>
     <string name="info_api_version">API 版本</string>
     <string name="info_framework_version">框架版本</string>
+    <string name="info_manager_package_name">管理員套件名稱</string>
     <string name="info_system_version">系統版本</string>
     <string name="info_device">裝置型號</string>
     <string name="info_system_abi">系統架構</string>
@@ -73,10 +76,14 @@
     <string name="app_welcome_summary">LSPosed 依家支援系統寄生模式以避免偵測，你可以喺通知欄開啟寄生管理器。建議移除現有嘅 App。</string>
     <!-- LogsActivity -->
     <string name="menuSaveToSd">儲存</string>
+    <string name="menuShareLog">分享</string>
     <string name="nav_item_logs_verbose">詳細日誌</string>
     <string name="nav_item_logs_module">模組日誌</string>
+    <string name="logs_saving">正在儲存日志，請稍候</string>
     <string name="logs_saved">日誌已儲存</string>
     <string name="logs_save_failed2">儲存失敗：\n%s</string>
+    <string name="logs_preparing">正在準備日志，請稍候</string>
+    <string name="logs_prepare_failed">準備失败:\n%s</string>
     <string name="menuClearLog">立即清理日誌</string>
     <string name="logs_cleared">日誌清理成功</string>
     <string name="scroll_top">拉到最頂</string>
@@ -106,6 +113,8 @@
     <string name="install_to_user_message">確定要為用戶 %2$s 安裝 %1$s？建議手動安裝或多開，透過 LSPosed 強制安裝可能會出問題。</string>
     <string name="expand">展開</string>
     <string name="collapse">收埋</string>
+    <string name="reset_scope_request_setting">重設作用域請求設定</string>
+    <string name="reset_scope_request_setting_done">已重設作用域請求設定</string>
     <!-- AppListActivity -->
     <string name="compile_speed">重新優化</string>
     <string name="compile_speed_msg">優化緊…</string>
@@ -180,6 +189,9 @@
     <string name="update_channel_nightly">每夜版 (Nightly)</string>
     <string name="settings_xposed_api_call_protection">Xposed API 調用保護</string>
     <string name="settings_xposed_api_call_protection_summary">封鎖模組動態載入嘅代碼使用 Xposed API，噉樣做可能會令到有啲模組失效，但有助於安全性</string>
+    <string name="settings_invalidate_inline_hooks">​還原 Inline Hook</string>
+    <string name="settings_invalidate_inline_hooks_summary">​清理 libart.so。此操作可能導致隨機故障及閃退，僅建議喺開唔到特定 App 嘅情況下先至使用。</string>
+    <string name="settings_invalidate_inline_hooks_warning">啟用此選項後，請勿回報任何問題。</string>
     <!-- Module Repo -->
     <string name="module_readme">睇我</string>
     <string name="module_releases">版本</string>
@@ -193,6 +205,7 @@
     <string name="module_release_no_more">冇更舊嘅版本</string>
     <string name="repo_load_failed">模組庫載入失敗：%s</string>
     <string name="sort_upgradable_first">可更新優先</string>
+    <string name="installed">已安裝</string>
     <plurals name="module_release_assets_download_count">
         <item quantity="other">%d 次下載</item>
     </plurals>
@@ -225,7 +238,6 @@
     <plurals name="message_disable_all_modules">
         <item quantity="other">將會停用 %d 個模組\n呢個操作無法復原</item>
     </plurals>
-  
     <string name="disable_success_title">成功</string>
     <string name="hook_debug_title">Hook 調試</string>
     <string name="debugging_title">調試</string>
